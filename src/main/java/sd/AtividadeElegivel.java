@@ -33,12 +33,24 @@ public class AtividadeElegivel {
         return tipo;
     }
 
+    public void setTipo(Tipo tipo) {
+        this.tipo = tipo;
+    }
+
     public String getEntidadeResponsavel() {
         return entidadeResponsavel;
     }
 
+    public void setEntidadeResponsavel(String entidadeResponsavel) {
+        this.entidadeResponsavel = entidadeResponsavel;
+    }
+
     public int getCargaHorariaMinima() {
         return cargaHorariaMinima;
+    }
+
+    public void setCargaHorariaMinima(int cargaHorariaMinima) {
+        this.cargaHorariaMinima = cargaHorariaMinima;
     }
 
     public boolean isDisponivel() {

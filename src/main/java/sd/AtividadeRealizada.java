@@ -9,6 +9,8 @@ public class AtividadeRealizada {
     private int cargaHorariaRealizada;
     private EstadoValidacao estado;
     private Utilizador validadoPor;
+    private String comprovativo;
+    private String observacao;
 
     public AtividadeRealizada(int idRegisto, AtividadeElegivel atividadeElegivel, LocalDate dataRealizacao, int cargaHorariaRealizada) {
         this.idRegisto = idRegisto;
@@ -48,5 +50,21 @@ public class AtividadeRealizada {
 
     public void setValidadoPor(Utilizador validadoPor) {
         this.validadoPor = validadoPor;
+    }
+
+    public String getComprovativo() {
+        return comprovativo;
+    }
+
+    public void setComprovativo(String comprovativo) {
+        this.comprovativo = comprovativo;
+    }
+
+    public String getObservacao() {
+        return observacao;
+    }
+
+    public void setObservacao(String observacao) {
+        this.observacao = observacao;
     }
 }

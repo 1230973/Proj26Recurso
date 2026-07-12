@@ -1,7 +1,6 @@
 package sd;
 
 import java.util.ArrayList;
-import java.time.LocalDate;
 
 public class Estudante extends Utilizador {
     private String curso;
@@ -27,8 +26,8 @@ public class Estudante extends Utilizador {
         return atividades;
     }
 
-    public void registarAtividade(AtividadeElegivel elegivel, LocalDate data, int cargaHoraria, String comprovativo) {
-        // TODO
+    public void registarAtividade(AtividadeRealizada atividade) {
+        atividades.add(atividade);
     }
 
     public ArrayList<AtividadeRealizada> consultarEstadoAtividades() {
