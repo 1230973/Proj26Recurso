@@ -26,4 +26,8 @@ public class Tipo {
     public void addAtividadeElegivel(AtividadeElegivel atividade) {
         atividadesElegiveis.add(atividade);
     }
+
+    public void removeAtividadeElegivel(AtividadeElegivel atividade) {
+        atividadesElegiveis.remove(atividade);
+    }
 }

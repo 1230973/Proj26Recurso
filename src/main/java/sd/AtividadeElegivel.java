@@ -6,14 +6,16 @@ public class AtividadeElegivel {
     private Tipo tipo;
     private String entidadeResponsavel;
     private int cargaHorariaMinima;
+    private String descricao;
     private boolean disponivel;
 
-    public AtividadeElegivel(int idAtividade, String nome, Tipo tipo, String entidadeResponsavel, int cargaHorariaMinima) {
+    public AtividadeElegivel(int idAtividade, String nome, Tipo tipo, String entidadeResponsavel, int cargaHorariaMinima, String descricao) {
         this.idAtividade = idAtividade;
         this.nome = nome;
         this.tipo = tipo;
         this.entidadeResponsavel = entidadeResponsavel;
         this.cargaHorariaMinima = cargaHorariaMinima;
+        this.descricao = descricao;
         this.disponivel = true;
     }
 
@@ -51,6 +53,14 @@ public class AtividadeElegivel {
 
     public void setCargaHorariaMinima(int cargaHorariaMinima) {
         this.cargaHorariaMinima = cargaHorariaMinima;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 
     public boolean isDisponivel() {
